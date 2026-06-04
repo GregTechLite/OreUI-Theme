@@ -1,4 +1,4 @@
-# OreUI Theme <img src="icon.png" alt="logo" width="160" align="right" style="margin-left: 16px; vertical-align: middle">
+# OreUI Theme <img src="pack.png" alt="logo" width="160" align="right" style="margin-left: 16px; vertical-align: middle">
 
 Bring Modern GUI style for **MC 1.12.2**!
 
