@@ -1,0 +1,23 @@
+name: PR Build
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Pack
+        shell: pwsh
+        run: ./pack.ps1 -Version "PR-${{ github.event.pull_request.number }}"
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: OreUI-Theme-PR-${{ github.event.pull_request.number }}
+          path: "*.zip"
+          retention-days: 7

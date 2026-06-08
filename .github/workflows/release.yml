@@ -7,16 +7,14 @@ on:
 
 jobs:
   release:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Create zip package
-        run: |
-          ZIP_NAME="OreUI-Theme-MC1.12.2-${GITHUB_REF_NAME}.zip"
-          zip -r "$ZIP_NAME" assets/ logo.png pack.mcmeta
-          echo "ZIP_NAME=$ZIP_NAME" >> $GITHUB_ENV
+      - name: Pack
+        shell: pwsh
+        run: ./pack.ps1 -Version "${{ github.ref_name }}"
 
       - name: Create Release
         uses: softprops/action-gh-release@v2
