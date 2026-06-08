@@ -2,9 +2,11 @@
 
 Bring Modern GUI style for **MC 1.12.2**!
 
-## Features
+## Supported Mod List
+- [**Applied Energistics 2 Unofficial Extended Life**][AE2]
+- [**GregTech CE: Unofficial**][GTCEu]
+- [**Modular UI 2**][MUI2]
 
-- [x] Supported all vanilla gui textures.
-- [ ] Supported *Modular UI2* format gui textures.
-- [ ] Supported *Applied Energistics 2* gui textures.
-- [ ] Supported *GregTech CE: Unofficial* (and its Addon Mods) gui textures.
+[AE2]: https://www.curseforge.com/minecraft/mc-mods/ae2-extended-life
+[GTCEu]: https://www.curseforge.com/minecraft/mc-mods/gregtech-ce-unofficial
+[MUI2]: https://www.curseforge.com/minecraft/mc-mods/modularui
